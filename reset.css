@@ -1,0 +1,103 @@
+@charset "utf-8";
+/*Midterm Project
+Author: Jordyn Merchant
+Filename: reset.css
+/*Structure*/
+article, aside, figcaption, figure, footer, header, main, nav, section {
+    display: block;
+}
+/*typographic*/
+article, aside, body, figure, figcaption, footer, h2, header, html, img, li, nav, ol, p, section, ul {
+    background: transparent;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+nav.header ul {
+    list-style:none;
+    list-style-image: none;
+}
+nav.header li {
+    width: 20%;
+    display: block;
+    float: left;
+    text-align: center;
+    font-size: 25pt;
+}
+nav a {
+    text-decoration: none;
+}
+body {
+    border: 12px outset rgba(160, 157, 157, 0.808);
+    background: rgb(107, 84, 94);
+    margin: 12px;
+    padding: 15px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    line-height: 1;
+}
+/*Navigation Styles*/
+nav.header {
+    font-weight: normal;
+    background: grey;
+    border: 5px solid rgb(71, 45, 75);
+    width: 100%;
+    display: block;
+    float: left;
+    font-size: 22px;
+    color: rgb(81, 125, 81);
+    margin: 4px;
+    padding: 2px;
+}
+nav a:hover::before {
+    content: "~";
+}
+nav a:hover::after {
+    content: "~";
+}
+nav a:visited {
+    color: silver;
+}
+html {
+    background: linear-gradient(rgb(85, 14, 47), grey);
+    color: silver;
+}
+footer {
+    background: rgb(66, 44, 44);
+    border: 8px solid grey;
+    font: italic;
+    font-size: 14pt;
+    color: silver;
+    width: 100%;
+    text-align:center;
+}
+header {
+    width: 100%;
+}
+/*Mobile Styles max 480px*/
+@media only screen and (max-width:480px) {
+    nav.header li {
+        width: 20%;
+        display: block;
+        float: left;
+        font-size: 12pt;
+    }
+    #trees, #links, #dna{
+        display: none;
+    }
+}
+/*Tablet & Desktop Styles min 481px*/
+@media only screen and (min-width:481px) {
+    ul li {
+        float: left;
+        position: relative;
+        display: block;
+        width: 30%;
+    }
+    nav::after {
+        clear: both;
+    }
+}

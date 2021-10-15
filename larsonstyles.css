@@ -1,0 +1,52 @@
+@charset "utf-8";
+/*Midterm Project
+Author: Jordyn Merchant
+Filename: larsonstyles.css*/
+/*Body Styles*/
+h1 {
+    font-weight: bold;
+    color: rgb(37, 90, 90);
+    text-shadow: rgb(10, 24, 23) 5px 3px 1px,
+    rgba(21, 21, 21, 70%) 8px 8px 20px;
+    font-size: 32pt;
+    text-align: center;
+}
+aside {
+    border: 12px solid grey;
+    border-radius: 30px;
+    box-shadow: rgba(119, 105, 197, 0.61) 0px 0px 25px 15px;
+    font: 14pt;
+    color: silver;
+    font-weight: bold;
+    margin: 8px;
+    padding: 10px; 
+    -webkit-flex: 3 1 361px;
+    flex: 3 1 361px;
+    overflow: auto;
+    height: 200px;
+}
+aside > h2 {
+    text-align: center;
+}
+aside > section.images {
+    display: flex;
+    flex-flow: row wrap;
+    width: 40%;
+    float: left;
+}
+aside > section.images > figure > img {
+    flex: 1 1 100px;
+    width: 100px;
+    margin: 5px;
+}
+aside p {
+    width: 60%;
+    font-size: smaller;
+    font-weight: normal;
+    float: left;
+}
+body p::first-letter {
+    font-size: 18pt;
+    font-weight: bolder;
+    font-family: cursive;
+}
